@@ -1,9 +1,16 @@
 <template>
   <div id="app">
     <!-- Banner Section -->
-    <div class="site-banner h-screen flex flex-col items-center justify-center">
+    <div class="site-banner h-screen flex flex-col items-center justify-center p-10">
+      <img class="w-10" src="@/assets/trd.png" />
       <h1 class="text-5xl font-bold">Thirdfloor</h1>
-      <p class="text-2xl">Chinimini ini bunny</p>
+      <p
+        class="text-2xl leading-snug font-medium text-center"
+      >Your path to success is just a few clicks away.</p>
+
+      <p
+        class="text-center leading-snug"
+      >Engage with us now, and let's start making your ideas into reality.</p>
       <a
         class="bg-blue-500 hover:bg-blue-700 text-white font-bold mt-10 py-2 px-4 rounded"
       >Contact us</a>
@@ -14,16 +21,34 @@
     <!-- End Slogan Section -->
 
     <!-- Services Section -->
-    <div
-      class="services h-screen-halves bg-gray-900 text-white p-4 flex flex-col items-center justify-center"
-    >
-      <p class="text-3xl font-bold">Mobile or Web?</p>
-      <p class="text-2xl font-medium">We got you covered!</p>
-      <p class="font-medium text-center mt-5">Our team uses the best tools in the industry</p>
-      <p>Here are the finest:</p>
+    <div class="services bg-gray-200 p-10 flex flex-col items-center justify-center">
+      <p class="text-2xl font-medium">Mobile or Web?</p>
+      <p class="text-base font-medium">We got you covered!</p>
+      <img src="/undraw/undraw_web_devices_ad58.svg" />
     </div>
 
-    <div class="services bg-whiteflex w-full flex-col items-center justify-center">
+    <div class="p-10 flex flex-col items-center justify-center">
+      <p class="text-center text-2xl font-medium">Modern problems, modern solution</p>
+
+      <img src="/undraw/undraw_blooming_jtv6.svg" />
+      <p class="text-base font-medium pt-2 text-center">
+        Our team uses one of the best technologies on the wild,
+        yet ensuring the right tools for the job.
+      </p>
+    </div>
+    <div class="bg-gray-800 flex px-3 py-4 flex-col items-center justify-center relative">
+      <p class="text-center text-2xl font-medium p-6 text-white">Our sharpest tools from our shed</p>
+      <div
+        class="inline-block mt-3 rounded w-full p-6 bg-white flex items-center h-32 justify-between"
+        v-for="(s,i ) in skillset"
+        :key="i"
+      >
+        <p class="text-base font-medium">{{ s.title }}</p>
+        <img class="w-24" style="fill: orange;" :src="s.logo" />
+      </div>
+    </div>
+
+    <!-- <div class="services bg-whiteflex w-full flex-col items-center justify-center">
       <div class="flex flex-col w-full">
         <div
           v-for="(skill, i) in skillset"
@@ -34,11 +59,11 @@
           <a class="text-2xl pt-5 font-extrabold">{{ skill.title }}</a>
         </div>
       </div>
-    </div>
+    </div>-->
 
     <!-- End Services Section -->
 
-    <div class="bg-gray-300 p-4 flex flex-col items-center justify-center">
+    <div class="bg-gray-300 p-10 flex flex-col items-center justify-center">
       <p class="text-3xl font-bold">Connect with us</p>
       <a
         class="bg-blue-500 hover:bg-blue-700 text-white font-bold mt-10 py-2 px-4 rounded"
@@ -49,25 +74,27 @@
     <!-- End The Team Section -->
 
     <!-- Contact us Section -->
-    <address class="address-links px-8 pt-8 pb-4 bg-gray-900 text-white not-italic">
-      <a
-        :href="`mailto:${contact.email}`"
-        target="_blank"
-        class="block font-bold"
-      >{{ contact.email }}</a>
-      <a :href="`tel:${contact.phone}`" target="_blank" class="block">{{ contact.phone }}</a>
-      <a class="block pt-3">{{ contact.address }}</a>
-    </address>
-    <div class="social-media-links flex pt-4 pb-8 px-8 bg-gray-900 text-white">
-      <a :href="mediaLinks.github" target="_blank" class="w-8">
-        <GitHubSVG />
-      </a>
-      <a :href="mediaLinks.facebook" target="_blank" class="w-8">
-        <FacebookSVG />
-      </a>
-      <a :href="mediaLinks.linkedin" target="_blank" class="w-8">
-        <LinkedInSVG />
-      </a>
+    <div class="footer bg-gray-900 text-white">
+      <address class="address-links px-8 pt-8 pb-4 not-italic">
+        <a
+          :href="`mailto:${contact.email}`"
+          target="_blank"
+          class="block font-bold"
+        >{{ contact.email }}</a>
+        <a :href="`tel:${contact.phone}`" target="_blank" class="block">{{ contact.phone }}</a>
+        <a class="block pt-3">{{ contact.address }}</a>
+      </address>
+      <div class="social-media-links flex pt-4 pb-8 px-8">
+        <a :href="mediaLinks.github" target="_blank" class="w-8">
+          <GitHubSVG />
+        </a>
+        <a :href="mediaLinks.facebook" target="_blank" class="w-8">
+          <FacebookSVG />
+        </a>
+        <a :href="mediaLinks.linkedin" target="_blank" class="w-8">
+          <LinkedInSVG />
+        </a>
+      </div>
     </div>
     <!-- End Contact us Section -->
   </div>
@@ -104,10 +131,6 @@ export default {
           title: "Vue"
         },
         {
-          logo: "/logo/react.svg",
-          title: "React"
-        },
-        {
           logo: "/logo/laravel.svg",
           title: "Laravel"
         },
@@ -120,12 +143,24 @@ export default {
           title: "NodeJS"
         },
         {
+          logo: "/logo/react.svg",
+          title: "React"
+        },
+        {
           logo: "/logo/apple-ios.svg",
           title: "Apple iOS"
         },
         {
           logo: "/logo/android.svg",
           title: "Android"
+        },
+        {
+          logo: "/logo/c.svg",
+          title: "C++"
+        },
+        {
+          logo: "/logo/assembly.svg",
+          title: "Assembly"
         }
       ]
     };
@@ -151,5 +186,23 @@ export default {
 }
 .h-screen-quarter {
   height: 75vh;
+}
+
+.footer {
+  position: relative;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/undraw/undraw_connected_world_wuay.svg");
+  background-size: 150%;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.075;
 }
 </style>
