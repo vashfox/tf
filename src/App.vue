@@ -6,13 +6,13 @@
       <h1 class="text-5xl font-bold">Thirdfloor</h1>
       <p
         class="text-2xl leading-snug font-medium text-center"
-      >Your path to success is just a few clicks away.</p>
+      >We bring ideas into reality.</p>
 
-      <p
+      <!-- <p
         class="text-center leading-snug"
-      >Engage with us now, and let's start making your ideas into reality.</p>
+      >Engage with us now, and let's start making your ideas into reality.</p> -->
       <a
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold mt-10 py-2 px-4 rounded"
+        class="bg-blue-800 hover:bg-blue-900 text-white font-bold mt-10 py-2 px-4 rounded"
       >Contact us</a>
     </div>
     <!-- End Banner Section -->
@@ -22,9 +22,9 @@
 
     <!-- Services Section -->
     <div class="services bg-gray-200 p-10 flex flex-col items-center justify-center">
-      <p class="text-2xl font-medium">Mobile or Web?</p>
-      <p class="text-base font-medium">We got you covered!</p>
+      <p class="text-center text-2xl font-medium">Mobile or Web?</p>
       <img src="/undraw/undraw_web_devices_ad58.svg" />
+      <p class="text-base font-medium  pt-2 text-center">We got you covered!</p>
     </div>
 
     <div class="p-10 flex flex-col items-center justify-center">
@@ -33,17 +33,17 @@
       <img src="/undraw/undraw_blooming_jtv6.svg" />
       <p class="text-base font-medium pt-2 text-center">
         Our team uses one of the best technologies on the wild,
-        yet ensuring the right tools for the job.
+        yet ensuring the right tool for the job.
       </p>
     </div>
-    <div class="bg-gray-800 flex px-3 py-4 flex-col items-center justify-center relative">
-      <p class="text-center text-2xl font-medium p-6 text-white">Our sharpest tools from our shed</p>
+    <div class="bg-gray-800 flex border-transparent px-3 py-4 flex-col items-center justify-center relative">
+      <p class="text-center text-2xl font-medium p-6 text-white">Sharpest tools from our shed</p>
       <div
         class="inline-block mt-3 rounded w-full p-6 bg-white flex items-center h-32 justify-between"
         v-for="(s,i ) in skillset"
         :key="i"
       >
-        <p class="text-base font-medium">{{ s.title }}</p>
+        <p class="text-2xl font-medium">{{ s.title }}</p>
         <img class="w-24" style="fill: orange;" :src="s.logo" />
       </div>
     </div>
@@ -63,11 +63,21 @@
 
     <!-- End Services Section -->
 
-    <div class="bg-gray-300 p-10 flex flex-col items-center justify-center">
-      <p class="text-3xl font-bold">Connect with us</p>
-      <a
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold mt-10 py-2 px-4 rounded"
-      >Contact us</a>
+    <div class="bg-gray-900 p-10 flex flex-col items-center justify-center text-white">
+      <p class="text-center text-2xl font-medium">How can we help you</p>
+      <div class="py-2 mt-3">
+        <b>Agency Partner</b>
+        <p class="mt-2">Need an expert on specific discipline? Let {{ company}} do the job.</p>
+      </div>
+      <div class="py-2">
+        <b>Development Team</b>
+        <p class="mt-2">Having a great idea and a funding,</p> 
+        <p>let {{ company }} be your development team.</p>
+      </div>
+      <div>
+        <b>Agency Partner</b>
+        <p>The quick brown fox jumps over the lazy dog</p>
+      </div>
     </div>
 
     <!-- The Team Section -->
@@ -114,6 +124,7 @@ export default {
   },
   data() {
     return {
+      company: "Thirdfloor",
       contact: {
         email: "thirdfloor.solutions@gmail.com",
         phone: "+639171698676",
@@ -153,14 +164,6 @@ export default {
         {
           logo: "/logo/android.svg",
           title: "Android"
-        },
-        {
-          logo: "/logo/c.svg",
-          title: "C++"
-        },
-        {
-          logo: "/logo/assembly.svg",
-          title: "Assembly"
         }
       ]
     };
