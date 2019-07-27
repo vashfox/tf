@@ -30,14 +30,14 @@
     <div class="p-10 flex flex-col items-center justify-center">
       <p class="text-center text-2xl font-medium">Modern problems, modern solution</p>
 
-      <img src="/undraw/undraw_blooming_jtv6.svg" />
+      <img src="/undraw/undraw_user_flow_vr6w.svg" />
       <p class="text-base font-medium pt-2 text-center">
         Our team uses one of the best technologies on the wild,
         yet ensuring the right tool for the job.
       </p>
     </div>
     <div class="bg-gray-800 flex border-transparent px-3 py-4 flex-col items-center justify-center relative">
-      <p class="text-center text-2xl font-medium p-6 text-white">Sharpest tools from our shed</p>
+      <p class="text-center text-2xl font-medium p-6 text-white">Sharpest tools from our shed</p> 
       <div
         class="inline-block mt-3 rounded w-full p-6 bg-white flex items-center h-32 justify-between"
         v-for="(s,i ) in skillset"
