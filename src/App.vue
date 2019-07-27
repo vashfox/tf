@@ -63,7 +63,7 @@
 
     <!-- End Services Section -->
 
-    <div class="bg-gray-900 p-10 flex flex-col text-left items-center">
+    <div class="bg-gray-900 px-8 py-10 flex flex-col text-left items-center">
       <p class="text-center text-gray-500 text-2xl font-medium">How can we help you</p>
       <div class="py-2 mt-3 ">
         <p  class="text-gray-500 font-semibold">Agency Partner</p>
