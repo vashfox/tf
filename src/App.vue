@@ -63,20 +63,19 @@
 
     <!-- End Services Section -->
 
-    <div class="bg-gray-900 p-10 flex flex-col items-center justify-center text-white">
-      <p class="text-center text-2xl font-medium">How can we help you</p>
-      <div class="py-2 mt-3">
-        <b>Agency Partner</b>
-        <p class="mt-2">Need an expert on specific discipline? Let {{ company}} do the job.</p>
+    <div class="bg-gray-900 p-10 flex flex-col text-left items-center">
+      <p class="text-center text-gray-500 text-2xl font-medium">How can we help you</p>
+      <div class="py-2 mt-3 ">
+        <p  class="text-gray-500 font-semibold">Agency Partner</p>
+        <p class="mt-2  text-white">The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
       </div>
-      <div class="py-2">
-        <b>Development Team</b>
-        <p class="mt-2">Having a great idea and a funding,</p> 
-        <p>let {{ company }} be your development team.</p>
+      <div class="py-2 text-left">
+        <p class="text-gray-500 font-semibold">Development Team</p>
+        <p class="mt-2  text-white">The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>  
       </div>
-      <div>
-        <b>Agency Partner</b>
-        <p>The quick brown fox jumps over the lazy dog</p>
+      <div class="py-2 text-left">
+        <p  class="text-gray-500 font-semibold">Fox One</p>
+        <p class="mt-2  text-white">The quick brown fox jumps over the lazy dog The quick brown fox jumps over the lazy dog.</p>
       </div>
     </div>
 
