@@ -5,17 +5,27 @@
       <img class="w-10" src="@/assets/trd.png" />
       <h1 class="text-5xl font-bold">Thirdfloor</h1>
       <p
-        class="text-2xl leading-snug font-medium text-center"
-      >We bring ideas into reality.</p>
+        class="text leading-snug font-medium text-center"
+      >We help companies in achieving technological success through mobile and web</p>
+      <!-- <p class="text-2xl leading-snug font-medium text-center">We bring ideas into reality.</p> -->
 
       <!-- <p
         class="text-center leading-snug"
-      >Engage with us now, and let's start making your ideas into reality.</p> -->
+      >Engage with us now, and let's start making your ideas into reality.</p>-->
       <a
         class="bg-blue-800 hover:bg-blue-900 text-white font-bold mt-10 py-2 px-4 rounded"
-      >Contact us</a>
+      >Partner with us</a>
     </div>
     <!-- End Banner Section -->
+
+    <div class="px-8 py-10 flex flex-col text-left items-center">
+      <p class="text-center text-2xl font-medium">We love to see you succeed</p>
+      <div class="py-2 mt-3">
+        <p
+          class="mt-2"
+        >The Quick brown fox jumps over the lazy dog.The Quick brown fox jumps over the lazy dog.The Quick brown fox jumps over the lazy dog.The Quick brown fox jumps over the lazy dog.</p>
+      </div>
+    </div>
 
     <!-- Simple About Team Section -->
     <!-- End Slogan Section -->
@@ -24,7 +34,7 @@
     <div class="services bg-gray-200 p-10 flex flex-col items-center justify-center">
       <p class="text-center text-2xl font-medium">Mobile or Web?</p>
       <img src="/undraw/undraw_web_devices_ad58.svg" />
-      <p class="text-base font-medium  pt-2 text-center">We got you covered!</p>
+      <p class="text-base font-medium pt-2 text-center">We got you covered!</p>
     </div>
 
     <div class="p-10 flex flex-col items-center justify-center">
@@ -36,8 +46,10 @@
         yet ensuring the right tool for the job.
       </p>
     </div>
-    <div class="bg-gray-800 flex border-transparent px-3 py-4 flex-col items-center justify-center relative">
-      <p class="text-center text-2xl font-medium p-6 text-white">Sharpest tools from our shed</p> 
+    <div
+      class="bg-gray-800 flex border-transparent px-3 py-4 flex-col items-center justify-center relative"
+    >
+      <p class="text-center text-2xl font-medium p-6 text-white">Sharpest tools from our shed</p>
       <div
         class="inline-block mt-3 rounded w-full p-6 bg-white flex items-center h-32 justify-between"
         v-for="(s,i ) in skillset"
@@ -63,7 +75,7 @@
 
     <!-- End Services Section -->
 
-    <div class="bg-gray-900 px-8 py-10 flex flex-col text-left items-center">
+    <!-- <div class="bg-gray-900 px-8 py-10 flex flex-col text-left items-center">
       <p class="text-center text-gray-500 text-2xl font-medium">How can we help you</p>
       <div class="py-2 mt-3 ">
         <p  class="text-gray-500 font-semibold">Agency Partner</p>
@@ -77,6 +89,17 @@
         <p  class="text-gray-500 font-semibold">Fox One</p>
         <p class="mt-2  text-white">The quick brown fox jumps over the lazy dog The quick brown fox jumps over the lazy dog.</p>
       </div>
+    </!-->
+
+    <div class="bg-gray-900 px-8 py-10 flex flex-col text-left items-center">
+      <p class="text-center text-white text-2xl font-medium">Interested in working with us?</p>
+
+      <div class="py-2 text-white text-center font-semibold">
+        <p>Let's start the beginning of our long partnership in achieving success.</p>
+      </div>
+      <a
+        class="bg-blue-800 hover:bg-blue-900 text-white font-bold mt-5 py-2 px-4 rounded"
+      >Let's talk</a>
     </div>
 
     <!-- The Team Section -->
