@@ -14,16 +14,18 @@
         class="text-center leading-snug"
       >Engage with us now, and let's start making your ideas into reality.</p>-->
       <a
-        class="bg-yellow-500 text-yellow-200 font-bold uppercase shadow mt-10 py-3 px-8 rounded"
+        class="bg-yellow-500 text-yellow-100 font-bold uppercase shadow mt-10 py-3 px-8 rounded"
       >Partner with us</a>
     </div>
     <!-- End Banner Section -->
 
     <div class="px-8 py-10 flex flex-col text-left items-center">
       <p class="text-center text-2xl font-medium">We love to see you succeed</p>
+
+      <img class="my-5" src="/undraw/undraw_business_deal_cpi9.svg" />
       <div class="py-2 mt-3">
         <p
-          class="mt-2 text-gray-600"
+          class="mt-2 text-gray-600 text-center"
         >The Quick brown fox jumps over the lazy dog.The Quick brown fox jumps over the lazy dog.The Quick brown fox jumps over the lazy dog.The Quick brown fox jumps over the lazy dog.</p>
       </div>
     </div>
@@ -34,14 +36,14 @@
     <!-- Services Section -->
     <div class="services bg-gray-200 p-10 flex flex-col items-center justify-center">
       <p class="text-center text-2xl font-medium">Mobile or Web?</p>
-      <img src="/undraw/undraw_web_devices_ad58.svg" />
+      <img class="my-5" src="/undraw/undraw_web_devices_ad58.svg" />
       <p class="text-base text-gray-600 font-medium pt-2 text-center">We got you covered!</p>
     </div>
 
     <div class="p-10 flex flex-col items-center justify-center">
       <p class="text-center text-2xl font-medium">Modern problems, modern solution</p>
 
-      <img src="/undraw/undraw_user_flow_vr6w.svg" />
+      <img class="my-5" src="/undraw/undraw_user_flow_vr6w.svg" />
       <p class="text-base text-gray-600 font-medium pt-2 text-center">
         Our team uses one of the best technologies on the wild,
         yet ensuring the right tool for the job.
@@ -57,7 +59,7 @@
         v-for="(s,i ) in skillset"
         :key="i"
       >
-        <span class="pr-24">
+        <span class="pr-20">
           <p class="text-2xl font-medium" :class="s.custom_class">{{ s.title }}</p>
           <p class="text-base text-gray-500 leading-tight">{{ s.description }}</p>
         </span>
@@ -103,7 +105,7 @@
         <p>Let's start the beginning of our long and fruitful relationship.</p>
       </div>
       <a
-        class="bg-blue-800 text-blue-200 font-bold uppercase shadow mt-10 py-3 px-8 rounded"
+        class="bg-blue-500 text-blue-200 font-bold uppercase shadow mt-10 py-3 px-8 rounded"
       >Let's talk</a>
     </div>
 
@@ -116,7 +118,7 @@
         <a
           :href="`mailto:${contact.email}`"
           target="_blank"
-          class="block font-bold"
+          class="block font-bold text-blue-300"
         >{{ contact.email }}</a>
         <a :href="`tel:${contact.phone}`" target="_blank" class="block">{{ contact.phone }}</a>
         <a class="block pt-3">{{ contact.address }}</a>
@@ -150,6 +152,12 @@ export default {
     LinkedInSVG
   },
   data() {
+    /**
+     * email: thirdfloor.solutions@gmail.com
+     * github: https://github.com/third-floor-solutions
+     * linkedin: https://www.linkedin.com/in/third-floor-355045190/
+     * facebook: https://business.facebook.com/thirdfloor.solutions/
+     */
     return {
       company: "Thirdfloor",
       contact: {
@@ -159,9 +167,9 @@ export default {
           "Hillmand St. Catalunan, Davao City, Davao del Sur, 8000, Philippines"
       },
       mediaLinks: {
-        linkedIn: "https://linkedin.com",
-        facebook: "https://facebook.com",
-        github: "https://github.com"
+        linkedIn: "https://www.linkedin.com/in/third-floor-355045190/",
+        facebook: "https://business.facebook.com/thirdfloor.solutions/",
+        github: "https://github.com/third-floor-solutions"
       },
       skillset: [
         {
