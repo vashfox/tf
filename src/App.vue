@@ -1,19 +1,20 @@
 <template>
   <div id="app">
     <!-- Banner Section -->
-    <div class="site-banner h-screen flex flex-col items-center justify-center p-10">
-      <img class="w-10" src="@/assets/trd.png" />
+    <div class="site-banner h-screen flex flex-col items-center justify-center px-10">
+      <img class="tf-image" src="@/assets/trd.png" />
       <h1 class="text-5xl font-bold">Thirdfloor</h1>
+      <h2 class="text-2xl font-bold -mt-5 mb-3 have-some-space">solutions</h2>
       <p
-        class="text leading-snug font-medium text-center"
-      >We help companies in achieving technological success through mobile and web</p>
+        class="text-gray-700 leading-snug font-medium text-center"
+      >A fast and growing software company, that build fast, elegant and high quality products.</p>
       <!-- <p class="text-2xl leading-snug font-medium text-center">We bring ideas into reality.</p> -->
 
       <!-- <p
         class="text-center leading-snug"
       >Engage with us now, and let's start making your ideas into reality.</p>-->
       <a
-        class="bg-blue-800 hover:bg-blue-900 text-white font-bold mt-10 py-2 px-4 rounded"
+        class="bg-yellow-500 text-yellow-200 font-bold uppercase shadow mt-10 py-3 px-8 rounded"
       >Partner with us</a>
     </div>
     <!-- End Banner Section -->
@@ -22,7 +23,7 @@
       <p class="text-center text-2xl font-medium">We love to see you succeed</p>
       <div class="py-2 mt-3">
         <p
-          class="mt-2"
+          class="mt-2 text-gray-600"
         >The Quick brown fox jumps over the lazy dog.The Quick brown fox jumps over the lazy dog.The Quick brown fox jumps over the lazy dog.The Quick brown fox jumps over the lazy dog.</p>
       </div>
     </div>
@@ -34,29 +35,33 @@
     <div class="services bg-gray-200 p-10 flex flex-col items-center justify-center">
       <p class="text-center text-2xl font-medium">Mobile or Web?</p>
       <img src="/undraw/undraw_web_devices_ad58.svg" />
-      <p class="text-base font-medium pt-2 text-center">We got you covered!</p>
+      <p class="text-base text-gray-600 font-medium pt-2 text-center">We got you covered!</p>
     </div>
 
     <div class="p-10 flex flex-col items-center justify-center">
       <p class="text-center text-2xl font-medium">Modern problems, modern solution</p>
 
       <img src="/undraw/undraw_user_flow_vr6w.svg" />
-      <p class="text-base font-medium pt-2 text-center">
+      <p class="text-base text-gray-600 font-medium pt-2 text-center">
         Our team uses one of the best technologies on the wild,
         yet ensuring the right tool for the job.
       </p>
     </div>
     <div
-      class="bg-gray-800 flex border-transparent px-3 py-4 flex-col items-center justify-center relative"
+      class="bg-gray-100 flex border-transparent px-3 py-4 flex-col items-center justify-center relative"
     >
-      <p class="text-center text-2xl font-medium p-6 text-white">Sharpest tools from our shed</p>
+      <p class="text-center text-2xl font-medium p-6">Sharpest tools from our shed</p>
       <div
-        class="inline-block mt-3 rounded w-full p-6 bg-white flex items-center h-32 justify-between"
+        class="inline-block shadow-md overflow-hidden rounded w-full p-6 bg-white flex items-center h-32 justify-between relative"
+        :class="{ 'mt-5' : i !== 0 }"
         v-for="(s,i ) in skillset"
         :key="i"
       >
-        <p class="text-2xl font-medium">{{ s.title }}</p>
-        <img class="w-24" style="fill: orange;" :src="s.logo" />
+        <span class="pr-24">
+          <p class="text-2xl font-medium" :class="s.custom_class">{{ s.title }}</p>
+          <p class="text-base text-gray-500 leading-tight">{{ s.description }}</p>
+        </span>
+        <img class="w-24 absolute inset-y-1/2 right-0" style="right: -1.5rem" :src="s.logo" />
       </div>
     </div>
 
@@ -92,13 +97,13 @@
     </!-->
 
     <div class="bg-gray-900 px-8 py-10 flex flex-col text-left items-center">
-      <p class="text-center text-white text-2xl font-medium">Interested in working with us?</p>
+      <p class="text-center text-white text-2xl font-medium">Ready to get started?</p>
 
-      <div class="py-2 text-white text-center font-semibold">
-        <p>Let's start the beginning of our long partnership in achieving success.</p>
+      <div class="py-2 mt-3 text-gray-200 text-center">
+        <p>Let's start the beginning of our long and fruitful relationship.</p>
       </div>
       <a
-        class="bg-blue-800 hover:bg-blue-900 text-white font-bold mt-5 py-2 px-4 rounded"
+        class="bg-blue-800 text-blue-200 font-bold uppercase shadow mt-10 py-3 px-8 rounded"
       >Let's talk</a>
     </div>
 
@@ -161,32 +166,43 @@ export default {
       skillset: [
         {
           logo: "/logo/vue.svg",
-          title: "Vue"
+          title: "Vue",
+          description: "The Progressive JavaScript Framework",
+          custom_class: ["text-color-vue"]
         },
         {
           logo: "/logo/laravel.svg",
-          title: "Laravel"
+          title: "Laravel",
+          description: "The PHP Framework For Web Artisans",
+          custom_class: ["text-color-laravel"]
         },
         {
           logo: "/logo/graphql.svg",
-          title: "GraphQL"
+          title: "GraphQL",
+          description: "A query language for your API",
+          custom_class: ["text-color-graphql"]
         },
         {
-          logo: "/logo/nodejs-1.svg",
-          title: "NodeJS"
+          logo: "/logo/nodejs-icon.svg",
+          title: "NodeJS",
+          description:
+            "A JavaScript runtime built on Chrome's V8 JavaScript engine",
+          custom_class: ["text-color-nodejs"]
         },
         {
           logo: "/logo/react.svg",
-          title: "React"
-        },
-        {
-          logo: "/logo/apple-ios.svg",
-          title: "Apple iOS"
-        },
-        {
-          logo: "/logo/android.svg",
-          title: "Android"
+          title: "React",
+          description: "A JavaScript library for building user interfaces",
+          custom_class: ["text-color-react"]
         }
+        // {
+        //   logo: "/logo/apple-ios.svg",
+        //   title: "Apple iOS"
+        // },
+        // {
+        //   logo: "/logo/android.svg",
+        //   title: "Android"
+        // }
       ]
     };
   }
@@ -195,10 +211,10 @@ export default {
 
 <style>
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  @apply text-gray-800 text-base;
 }
 
 .site-banner {
@@ -228,6 +244,37 @@ export default {
   background-size: 150%;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.075;
+  opacity: 0.2;
+}
+
+.tf-image {
+  box-sizing: content-box;
+  @apply w-20 border-8;
+  border-color: #cbd5e0;
+}
+.have-some-space {
+  letter-spacing: 0.9rem;
+  margin-right: -0.9rem;
+  text-align: right;
+}
+
+.text-color-vue {
+  color: #41b883;
+}
+
+.text-color-laravel {
+  color: #f4645f;
+}
+
+.text-color-graphql {
+  color: #e10098;
+}
+
+.text-color-nodejs {
+  color: #43853d;
+}
+
+.text-color-react {
+  color: #60dafb;
 }
 </style>
