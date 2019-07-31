@@ -14,6 +14,7 @@
         class="text-center leading-snug"
       >Engage with us now, and let's start making your ideas into reality.</p>-->
       <a
+        @click="showDialog = true"
         class="bg-yellow-500 text-yellow-100 font-bold uppercase shadow mt-10 py-3 px-8 rounded"
       >Partner with us</a>
     </div>
@@ -54,7 +55,7 @@
     >
       <p class="text-center text-2xl font-medium p-6">Sharpest tools from our shed</p>
       <div
-        class="inline-block shadow-md overflow-hidden rounded w-full p-6 bg-white flex items-center h-32 justify-between relative"
+        class="w-full inline-block shadow-md overflow-hidden rounded p-6 bg-white flex items-center h-32 justify-between relative"
         :class="{ 'mt-5' : i !== 0 }"
         v-for="(s,i ) in skillset"
         :key="i"
@@ -105,6 +106,7 @@
         <p>Let's start the beginning of our long and fruitful relationship.</p>
       </div>
       <a
+        @click="showDialog = true"
         class="bg-blue-500 text-blue-200 font-bold uppercase shadow mt-10 py-3 px-8 rounded"
       >Let's talk</a>
     </div>
@@ -136,6 +138,7 @@
       </div>
     </div>
     <!-- End Contact us Section -->
+    <ContactUs :phone="contact.phone" v-if="showDialog" @cancel="showDialog = false" />
   </div>
 </template>
 
@@ -143,13 +146,15 @@
 import GitHubSVG from "@/assets/icons/github.svg";
 import FacebookSVG from "@/assets/icons/facebook.svg";
 import LinkedInSVG from "@/assets/icons/linkedin.svg";
+import ContactUs from "@/components/ContactUsDialog";
 
 export default {
   name: "app",
   components: {
     GitHubSVG,
     FacebookSVG,
-    LinkedInSVG
+    LinkedInSVG,
+    ContactUs
   },
   data() {
     /**
@@ -211,7 +216,8 @@ export default {
         //   logo: "/logo/android.svg",
         //   title: "Android"
         // }
-      ]
+      ],
+      showDialog: false
     };
   }
 };
