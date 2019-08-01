@@ -15,7 +15,7 @@
       >Engage with us now, and let's start making your ideas into reality.</p>-->
       <a
         @click="showDialog = true"
-        class="bg-yellow-500 text-yellow-100 font-bold uppercase shadow mt-10 py-3 px-8 rounded"
+        class="bg-yellow-500 text-yellow-100 font-bold uppercase shadow mt-10 py-3 px-8 rounded cursor-pointer"
       >Partner with us</a>
     </div>
     <!-- End Banner Section -->
@@ -107,7 +107,7 @@
       </div>
       <a
         @click="showDialog = true"
-        class="bg-blue-500 text-blue-200 font-bold uppercase shadow mt-10 py-3 px-8 rounded"
+        class="bg-blue-500 cursor-pointer text-blue-200 font-bold uppercase shadow mt-10 py-3 px-8 rounded"
       >Let's talk</a>
     </div>
 
@@ -120,19 +120,23 @@
         <a
           :href="`mailto:${contact.email}`"
           target="_blank"
-          class="block font-bold text-blue-300"
+          class="block font-bold text-blue-300 cursor-pointer"
         >{{ contact.email }}</a>
-        <a :href="`tel:${contact.phone}`" target="_blank" class="block">{{ contact.phone }}</a>
-        <a class="block pt-3">{{ contact.address }}</a>
+        <a
+          :href="`tel:${contact.phone}`"
+          target="_blank"
+          class="block cursor-pointer"
+        >{{ contact.phone }}</a>
+        <a class="block pt-3 cursor-pointer">{{ contact.address }}</a>
       </address>
       <div class="social-media-links flex pt-4 pb-8 px-8">
-        <a :href="mediaLinks.github" target="_blank" class="w-8">
+        <a :href="mediaLinks.github" target="_blank" class="w-8 cursor-pointer">
           <GitHubSVG />
         </a>
-        <a :href="mediaLinks.facebook" target="_blank" class="w-8">
+        <a :href="mediaLinks.facebook" target="_blank" class="w-8 cursor-pointer">
           <FacebookSVG />
         </a>
-        <a :href="mediaLinks.linkedin" target="_blank" class="w-8">
+        <a :href="mediaLinks.linkedin" target="_blank" class="w-8 cursor-pointer">
           <LinkedInSVG />
         </a>
       </div>

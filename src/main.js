@@ -1,3 +1,4 @@
+import "animate.css";
 import "@/assets/styles/main.css";
 
 import App from './App.vue'
