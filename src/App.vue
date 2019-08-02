@@ -2,8 +2,8 @@
   <div id="app">
     <!-- Banner Section -->
     <div class="site-banner h-screen flex flex-col items-center justify-center px-10">
-      <img class="tf-image" src="@/assets/trd.png" />
-      <h1 class="text-5xl font-bold">Thirdfloor</h1>
+      <img class="tf-image w-64" src="/img/67412323_495283111250152_9004867031664689152_n.png" />
+      <h1 class="text-5xl font-black">ThirdFloor</h1>
       <h2 class="text-2xl font-bold -mt-5 mb-3 have-some-space">solutions</h2>
       <p
         class="text-gray-700 leading-snug font-medium text-center"
@@ -27,7 +27,10 @@
       <div class="py-2 mt-3">
         <p
           class="mt-2 text-gray-600 text-center"
-        >The Quick brown fox jumps over the lazy dog.The Quick brown fox jumps over the lazy dog.The Quick brown fox jumps over the lazy dog.The Quick brown fox jumps over the lazy dog.</p>
+        >From showing you how easy it is to connect with us, to answering any concerns you may have, we are there to assist in every way necessary.</p>
+        <p
+          class="mt-2 text-gray-600 text-center"
+        >Our team are extremely reliable due to our carefully honed processes. Most of the service calls and emails we attend to are related to the partnership you can trust – and we’ll do the best way possible as desired.</p>
       </div>
     </div>
 
@@ -38,7 +41,7 @@
     <div class="services bg-gray-200 p-10 flex flex-col items-center justify-center">
       <p class="text-center text-2xl font-medium">Mobile or Web?</p>
       <img class="my-5" src="/undraw/undraw_web_devices_ad58.svg" />
-      <p class="text-base text-gray-600 font-medium pt-2 text-center">We got you covered!</p>
+      <p class="text-base text-gray-600 font-medium pt-2 text-center">Our bread and butter is the responsive web design. We create 100% web design that is completely custom to cater to your businesses exact message and needs. A great experience that your website is vital for your visitors no matter what device they’re on.</p>
     </div>
 
     <div class="p-10 flex flex-col items-center justify-center">
@@ -50,10 +53,21 @@
         yet ensuring the right tool for the job.
       </p>
     </div>
+
+    <div class="bg-gray-100 p-10 flex flex-col items-center justify-center">
+      <p class="text-center text-2xl font-medium">Teamwork and Collaboration</p>
+
+      <img class="my-5" src="/undraw/undraw_co-working_825n.svg" />
+      <p class="text-base text-gray-600 font-medium pt-2 text-center">
+        Your product will start taking shape and rapid prototyping. Through collaborative and integrated process and development enables us to make quick, pursuit adjustments based on user and clients feedback software product that people love to use and that delivers clear business outcomes.
+      </p>
+    </div>
+
     <div
-      class="bg-gray-100 flex border-transparent px-3 py-4 flex-col items-center justify-center relative"
+      class="bg-gray-200 flex border-transparent px-3 py-4 flex-col items-center justify-center relative"
     >
-      <p class="text-center text-2xl font-medium p-6">Sharpest tools from our shed</p>
+      <p class="text-center text-2xl font-medium p-6 pb-0">Sharpest tools from our shed</p>
+      <p class="text-base  px-6 pb-3 text-gray-600 font-medium pt-2 text-center">We use modern technologies to create impactful and engaging experiences for website and mobile. Your website is a living entity and requires care.</p>
       <div
         class="w-full inline-block shadow-md overflow-hidden rounded p-6 bg-white flex items-center h-32 justify-between relative"
         :class="{ 'mt-5' : i !== 0 }"
@@ -267,7 +281,8 @@ export default {
 
 .tf-image {
   box-sizing: content-box;
-  @apply w-20 border-8;
+  /* @apply w-20 border-8; */
+  margin-top: -150px;
   border-color: #cbd5e0;
 }
 .have-some-space {
