@@ -241,7 +241,7 @@ export default {
           logo: "/logo/nodejs-icon.svg",
           title: "NodeJS",
           description:
-            "A JavaScript runtime built on Chrome's V8 JavaScript engine",
+            "A JavaScript runtime built on Chrome's V8",
           custom_class: ["text-color-nodejs"]
         },
         {
