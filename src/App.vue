@@ -112,7 +112,7 @@
         <p class="mt-2  text-white">The quick brown fox jumps over the lazy dog The quick brown fox jumps over the lazy dog.</p>
       </div>
     </!-->
-
+    <DevelopersSection/>
     <div class="bg-gray-900 px-8 py-10 flex flex-col text-left items-center">
       <p class="text-center text-white text-2xl font-medium">Ready to get started?</p>
 
@@ -165,6 +165,7 @@ import GitHubSVG from "@/assets/icons/github.svg";
 import FacebookSVG from "@/assets/icons/facebook.svg";
 import LinkedInSVG from "@/assets/icons/linkedin.svg";
 import ContactUs from "@/components/ContactUsDialog";
+import DevelopersSection from "@/components/DevelopersSection"
 
 export default {
   name: "app",
@@ -172,7 +173,8 @@ export default {
     GitHubSVG,
     FacebookSVG,
     LinkedInSVG,
-    ContactUs
+    ContactUs,
+    DevelopersSection
   },
   data() {
     /**
