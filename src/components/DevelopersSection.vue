@@ -35,7 +35,7 @@ export default {
 					name: 'Bsnman',
 					title: 'Software Developer'	},
 				{ avatar: dildoeAvatar,
-					name: 'Dildoe',
+					name: 'Michael',
 					title: 'Software Developer' },
 				{	avatar: niruAvatar,
 					name: 'Niru',
