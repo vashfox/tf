@@ -20,17 +20,20 @@
     </div>
     <!-- End Banner Section -->
 
-    <div class="px-8 py-10 flex flex-col text-left items-center">
-      <p class="text-center text-2xl font-medium">We love to see you succeed</p>
-
-      <img class="my-5" src="/undraw/undraw_business_deal_cpi9.svg" />
-      <div class="py-2 mt-3">
-        <p
-          class="mt-2 text-gray-600 text-center"
-        >From showing you how easy it is to connect with us, to answering any concerns you may have, we are there to assist in every way necessary.</p>
-        <p
-          class="mt-2 text-gray-600 text-center"
-        >Our team are extremely reliable due to our carefully honed processes. Most of the service calls and emails we attend to are related to the partnership you can trust – and we’ll do the best way possible as desired.</p>
+    <div class="bg-white">
+      <div class="container mx-auto px-8 py-10 flex flex-col text-left items-center">
+        <p class="text-center text-2xl font-medium">We love to see you succeed</p>
+        <div class="sm:flex sm:my-5 sm:justify-center sm:items-center">
+          <img class="my-5 sm:w-64 sm:mr-6 md:w-1/2 lg:w-1/3" src="/undraw/undraw_business_deal_cpi9.svg" />
+          <div class="py-2 mt-3">
+            <p
+              class="mt-2 text-gray-600 text-center md:text-lg"
+            >From showing you how easy it is to connect with us, to answering any concerns you may have, we are there to assist in every way necessary.</p>
+            <p
+              class="mt-2 text-gray-600 text-center md:text-lg"
+            >Our team are extremely reliable due to our carefully honed processes. Most of the service calls and emails we attend to are related to the partnership you can trust – and we’ll do the best way possible as desired.</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -38,47 +41,65 @@
     <!-- End Slogan Section -->
 
     <!-- Services Section -->
-    <div class="services bg-gray-200 p-10 flex flex-col items-center justify-center">
-      <p class="text-center text-2xl font-medium">Mobile or Web?</p>
-      <img class="my-5" src="/undraw/undraw_web_devices_ad58.svg" />
-      <p class="text-base text-gray-600 font-medium pt-2 text-center">Our bread and butter is the responsive web design. We create 100% web design that is completely custom to cater to your businesses exact message and needs. A great experience that your website is vital for your visitors no matter what device they’re on.</p>
+    <div class="services bg-gray-200">
+      <div class="container mx-auto p-10 flex flex-col items-center justify-center">
+        <p class="text-center text-2xl font-medium">Mobile or Web?</p>
+        <div class="sm:flex flex-row-reverse sm:my-5 sm:justify-center sm:items-center">
+          <img class="my-5 sm:w-64 sm:ml-6 md:w-1/2 lg:w-1/3" src="/undraw/undraw_web_devices_ad58.svg" />
+          <p
+            class="text-base text-gray-600 font-medium pt-2 text-center md:text-lg"
+          >Our bread and butter is the responsive web design. We create 100% web design that is completely custom to cater to your businesses exact message and needs. A great experience that your website is vital for your visitors no matter what device they’re on.</p>
+        </div>
+      </div>
     </div>
 
-    <div class="p-10 flex flex-col items-center justify-center">
-      <p class="text-center text-2xl font-medium">Modern problems, modern solution</p>
-
-      <img class="my-5" src="/undraw/undraw_user_flow_vr6w.svg" />
-      <p class="text-base text-gray-600 font-medium pt-2 text-center">
-        Our team uses one of the best technologies on the wild,
-        yet ensuring the right tool for the job.
-      </p>
+    <div class="bg-white">
+      <div class="container mx-auto p-10 flex flex-col items-center justify-center">
+        <p class="text-center text-2xl font-medium">Modern problems, modern solution</p>
+        <div class="sm:flex sm:my-5 sm:justify-center sm:items-center">
+          <img class="my-5 sm:w-64 sm:mr-6  md:w-1/2 lg:w-1/3" src="/undraw/undraw_user_flow_vr6w.svg" />
+          <p class="text-base text-gray-600 font-medium pt-2 text-center md:text-lg">
+            Our team uses one of the best technologies on the wild,
+            yet ensuring the right tool for the job.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div class="bg-gray-100 p-10 flex flex-col items-center justify-center">
-      <p class="text-center text-2xl font-medium">Teamwork and Collaboration</p>
-
-      <img class="my-5" src="/undraw/undraw_co-working_825n.svg" />
-      <p class="text-base text-gray-600 font-medium pt-2 text-center">
-        Your product will start taking shape and rapid prototyping. Through collaborative and integrated process and development enables us to make quick, pursuit adjustments based on user and clients feedback software product that people love to use and that delivers clear business outcomes.
-      </p>
+    <div class="bg-gray-100">
+      <div class="container mx-auto  p-10 flex flex-col items-center justify-center">
+        <p class="text-center text-2xl font-medium">Teamwork and Collaboration</p>
+        <div class="sm:flex flex-row-reverse sm:my-5 sm:justify-center sm:items-center">
+          <img class="my-5 sm:w-64 sm:ml-6  md:w-1/2 lg:w-1/3" src="/undraw/undraw_co-working_825n.svg" />
+          <p
+            class="text-base text-gray-600 font-medium pt-2 text-center md:text-lg"
+          >Your product will start taking shape and rapid prototyping. Through collaborative and integrated process and development enables us to make quick, pursuit adjustments based on user and clients feedback software product that people love to use and that delivers clear business outcomes.</p>
+        </div>
+      </div>
     </div>
 
     <div
-      class="bg-gray-200 flex border-transparent px-3 py-4 flex-col items-center justify-center relative"
+      class="bg-gray-200"
     >
-      <p class="text-center text-2xl font-medium p-6 pb-0">Sharpest tools from our shed</p>
-      <p class="text-base  px-6 pb-3 text-gray-600 font-medium pt-2 text-center">We use modern technologies to create impactful and engaging experiences for website and mobile. Your website is a living entity and requires care.</p>
-      <div
-        class="w-full inline-block shadow-md overflow-hidden rounded p-6 bg-white flex items-center h-32 justify-between relative"
-        :class="{ 'mt-5' : i !== 0 }"
-        v-for="(s,i ) in skillset"
-        :key="i"
-      >
-        <span class="pr-20">
-          <p class="text-2xl font-medium" :class="s.custom_class">{{ s.title }}</p>
-          <p class="text-base text-gray-500 leading-tight">{{ s.description }}</p>
-        </span>
-        <img class="w-24 absolute inset-y-1/2 right-0" style="right: -1.5rem" :src="s.logo" />
+      <div class="container mx-auto flex border-transparent px-3 py-4 flex-col items-center justify-center relative">
+        <p class="text-center text-2xl font-medium p-6 pb-0">Sharpest tools from our shed</p>
+        <p
+          class="text-base px-6 pb-3 text-gray-600 font-medium pt-2 text-center md:text-lg"
+        >We use modern technologies to create impactful and engaging experiences for website and mobile. Your website is a living entity and requires care.</p>
+        <div class="flex flex-col w-full mt-5 lg:flex-row">
+          <div
+          class="m-2 inline-block shadow-md overflow-hidden rounded p-6 bg-white flex items-center h-32 justify-between relative lg:h-300 lg:w-64 lg:flex-col lg:flex-col-reverse lg:content-start lg:justify-around "
+         
+          v-for="(s,i ) in skillset"
+          :key="i"
+        >
+          <span class="pr-20 lg:pr-0">
+            <p class="text-2xl font-medium lg:text-center" :class="s.custom_class">{{ s.title }}</p>
+            <p class="text-base text-gray-500 leading-tight lg:text-center">{{ s.description }}</p>
+          </span>
+          <img class="w-24 absolute -right-24 lg:h-24 lg:right-auto lg:static lg:flex-shrink-0" :src="s.logo" />
+        </div>
+        </div>
       </div>
     </div>
 
@@ -113,16 +134,17 @@
       </div>
     </!-->
 
-    <div class="bg-gray-900 px-8 py-10 flex flex-col text-left items-center">
-      <p class="text-center text-white text-2xl font-medium">Ready to get started?</p>
-
-      <div class="py-2 mt-3 text-gray-200 text-center">
-        <p>Let's start the beginning of our long and fruitful relationship.</p>
-      </div>
-      <a
-        @click="showDialog = true"
-        class="bg-blue-500 cursor-pointer text-blue-200 font-bold uppercase shadow mt-10 py-3 px-8 rounded"
-      >Let's talk</a>
+    <div class="bg-gray-900">
+      <div class="container mx-auto px-8 py-10 flex flex-col text-left items-center">
+        <p class="text-center text-white text-2xl font-medium">Ready to get started?</p>
+        <div class="py-2 mt-3 text-gray-200 text-center">
+          <p>Let's start the beginning of our long and fruitful relationship.</p>
+        </div>
+        <a
+          @click="showDialog = true"
+          class="bg-blue-500 cursor-pointer text-blue-200 font-bold uppercase shadow mt-10 py-3 px-8 rounded"
+        >Let's talk</a>
+      </div> 
     </div>
 
     <!-- The Team Section -->
@@ -130,7 +152,8 @@
 
     <!-- Contact us Section -->
     <div class="footer bg-gray-900 text-white">
-      <address class="address-links px-8 pt-8 pb-4 not-italic">
+      <div class="container mx-auto">
+         <address class="address-links px-8 pt-8 pb-4 not-italic">
         <a
           :href="`mailto:${contact.email}`"
           target="_blank"
@@ -154,6 +177,7 @@
           <LinkedInSVG />
         </a>
       </div>
+        </div>
     </div>
     <!-- End Contact us Section -->
     <ContactUs :phone="contact.phone" v-if="showDialog" @cancel="showDialog = false" />
@@ -217,7 +241,7 @@ export default {
           logo: "/logo/nodejs-icon.svg",
           title: "NodeJS",
           description:
-            "A JavaScript runtime built on Chrome's V8 JavaScript engine",
+            "A JavaScript runtime built on Chrome's V8",
           custom_class: ["text-color-nodejs"]
         },
         {
@@ -241,73 +265,3 @@ export default {
 };
 </script>
 
-<style>
-#app {
-  font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  @apply text-gray-800 text-base;
-}
-
-.site-banner {
-  background-color: #f7fafc;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' width='304' height='304'%3E%3Cpath fill='%23cbd5e0' fill-opacity='0.5' d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 1 1 2 0zm16 16V64h46v2h-48V37.9a5 5 0 1 1 2 0zm-128 96V208h16v12.1a5 5 0 1 1-2 0V210h-16v-76.1a5 5 0 1 1 2 0zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 1 1 0-2H96v-42.1a5 5 0 1 1 2 0zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 1 1 0-2H80V64h32V37.9a5 5 0 1 1 2 0zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 1 1 2 0zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.51L175.59 80H224V21.9a5 5 0 1 1 2 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 1 1-2 0v-99.51L184.59 96H300.1a5 5 0 0 1 3.9-3.9v2.07a3 3 0 0 0 0 5.66v2.07a5 5 0 0 1-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 1 1-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 1 1 0 2H0v-65.41l48-48V53.9a5 5 0 1 1 2 0zm-16 16V89.41l-34 34v-2.82l32-32V69.9a5 5 0 1 1 2 0zM12.1 32a5 5 0 1 1 0 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 1 1 0-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.59L40.59 194H21.9a5 5 0 1 1 0-2H41.41L66 216.59V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.6L56.6 162H37.9a5 5 0 1 1 0-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.59L48.59 178H21.9a5 5 0 1 1 0-2H49.41L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 0 1 3.9 3.9H3.83A3 3 0 0 0 0 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 0 1 6 97a5 5 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 0 0-5.66 0h-2.07a5 5 0 0 1 9.8 0zM5.9 0A5.02 5.02 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0h2.07A3 3 0 0 0 304 3.83V5.9a5 5 0 0 1-3.9-5.9zm3.9 300.1v2.07a3 3 0 0 0-1.83 1.83h-2.07a5 5 0 0 1 3.9-3.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'%3E%3C/path%3E%3C/svg%3E");
-}
-
-.h-screen-halves {
-  height: 50vh;
-}
-.h-screen-quarter {
-  height: 75vh;
-}
-
-.footer {
-  position: relative;
-}
-
-.footer::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("/undraw/undraw_connected_world_wuay.svg");
-  background-size: 150%;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.2;
-}
-
-.tf-image {
-  box-sizing: content-box;
-  /* @apply w-20 border-8; */
-  margin-top: -150px;
-  border-color: #cbd5e0;
-}
-.have-some-space {
-  letter-spacing: 0.9rem;
-  margin-right: -0.9rem;
-  text-align: right;
-}
-
-.text-color-vue {
-  color: #41b883;
-}
-
-.text-color-laravel {
-  color: #f4645f;
-}
-
-.text-color-graphql {
-  color: #e10098;
-}
-
-.text-color-nodejs {
-  color: #43853d;
-}
-
-.text-color-react {
-  color: #60dafb;
-}
-</style>
