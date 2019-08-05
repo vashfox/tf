@@ -16,28 +16,23 @@
 </template>
 
 <script>
-import vashAvatar from "@/assets/awesome-devs/vash.png"
-import jinikAvatar from "@/assets/awesome-devs/jinik.png"
-import bsnmanAvatar from "@/assets/awesome-devs/bsnman.png"
-import dildoeAvatar from "@/assets/awesome-devs/dildoe.png"
-import niruAvatar from "@/assets/awesome-devs/niru.png"
 export default {
 	data(){
 		return{
 			devList: [
-				{	avatar: vashAvatar,
+				{	avatar: '/awesome-dev/vash.svg',
 					name: 'Vash',
 					title: 'Software Developer'	},
-				{	avatar: jinikAvatar,
+				{	avatar: '/awesome-dev/jinik.svg',
 					name: 'Jinik',
 					title: 'Software Developer' },
-				{ avatar: bsnmanAvatar,
+				{ avatar: '/awesome-dev/bsnman.svg',
 					name: 'Bsnman',
 					title: 'Software Developer'	},
-				{ avatar: dildoeAvatar,
-					name: 'Dildoe',
+				{ avatar: '/awesome-dev/mic.svg',
+					name: 'Mic',
 					title: 'Software Developer' },
-				{	avatar: niruAvatar,
+				{	avatar: '/awesome-dev/niru.svg',
 					name: 'Niru',
 					title: 'Software Developer' }
 			]
